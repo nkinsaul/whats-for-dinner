@@ -5,33 +5,38 @@
   </head>
   <body>  
     <header>
-      <h1>What's for dinner?</h1>
-      <button>ADD A RECIPE</button>
+      <h1 class="heading">What's for dinner?</h1>
+      <button class="add-recipe-button">ADD A RECIPE</button>
     </header>
-    <article class="recipe-generator wrapper">
-      <div class="recipe-selector">
-        <h2>What are you looking for?</h2>
-        <label>
-          <label for="side">Side</label>
-            <input type="radio" id="side" name="meal-type" value="RADIO">
-        </label>
-        <label>
-          <label for="side">Main Dish</label>
+    <main>
+      <article class="recipe-generator" id="recipe-input">
+        <section class="recipe-selector">
+          <h2>What are you looking for?</h2>
+          <label>
+              <label for="side">Side</label>
+                <input type="radio" id="side" name="meal-type" value="RADIO">
+          </label>
+          <label>
+            <label for="side">Main Dish</label>
             <input type="radio" id="main-dish" name="meal-type" value="MAIN-DISH">
-        </label>
-        <label>
-          <label for="side">Dessert</label>
-            <input type="radio" id="dessert" name="meal-type" value="DESSERT">
-        </label>
-        <label>
-          <label for="side">Entire Meal</label>
-            <input type="radio" id="entire-meal" name="meal-type" value="ENTIRE-MEAL">
-        </label>
-      </div>
-      <div>
-
-      </div>
-    </article>
+          </label>
+          <label>
+            <label for="side">Dessert</label>
+              <input type="radio" id="dessert" name="meal-type" value="DESSERT">
+          </label>
+          <label>
+            <label for="side">Entire Meal</label>
+              <input type="radio" id="entire-meal" name="meal-type" value="ENTIRE-MEAL">
+          </label>
+          <button class="cook-button">Let's Cook!</button>
+        </section>
+      </article>   
+      <article class="recipe-generator" id="receipt-result">
+        <section class="recipe-output">
+          <img class="cookpot-image" src="./assets/cookpot.svg" alt="There's nothing here.">
+        </section>
+      </article>
+    </main>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>

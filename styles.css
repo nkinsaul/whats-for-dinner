@@ -18,41 +18,76 @@ body {
 }
 
 header {
-    margin: contain;
-    padding-top: 5;
+    margin: 0;
+    height: 10;
+    padding: 30;
     background-color: teal;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.add-recipe-button {
+    border-radius: 5px;
+    border: none;
+}
+
+main {
+    height: 70%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .recipe-generator {
-    height: 400px;
-    width: 400px;
+    height: 60%;
+    width: 500px;
     background-color:rgba(225, 225, 225, .9);
-    opacity: 0.8;
+    opacity: 0.9;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.wrapper {
+.recipe-output {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 5px;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.cook-pot {
+    border: 10px solid black;
+    height: 50%;
+    width: 400px;
+}
+
+.cookpot-image {
+    margin: 0;
+    height: 30%;
+    width: 30%;
+    display: block;
+    position: relative;
 }
 
 .recipe-selector {
-    display: flex;
+    margin:10%;
+    display: flex;  
+    justify-content: flex-end;
     flex-direction: column;
-}
-
-.recipe-selector:nth-child(1){
-    display: flex;
     align-items: flex-start;
 }
 
 label {
-    padding: 10;
+    padding: 5;
+}
+
+.cook-button {
+    padding: 7px 50px;
+    background-color:#0fb9b1;
+    border-radius: 5px;
+    border: none;
 }
 
 
