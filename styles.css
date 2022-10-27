@@ -8,3 +8,52 @@ red - #ee5253
 
 */
 
+body {
+    background-image: url('file:///Users/nataliekinsaul/turing/mod1/projects/whats-for-dinner/assets/burger-friends.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    margin: contain;
+    padding-top: 5;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+}
+
+.recipe-generator {
+    height: 400px;
+    width: 400px;
+    background-color:rgba(225, 225, 225, .9);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-selector {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-selector:nth-child(1){
+    display: flex;
+    align-items: flex-start;
+}
+
+label {
+    padding: 10;
+}
+
+
+
