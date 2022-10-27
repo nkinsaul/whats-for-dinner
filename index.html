@@ -13,28 +13,26 @@
         <section class="recipe-selector">
           <h2>What are you looking for?</h2>
           <label>
+            <input type="radio" id="side" name="meal-type" value="RADIO">
               <label for="side">Side</label>
-                <input type="radio" id="side" name="meal-type" value="RADIO">
           </label>
           <label>
-            <label for="side">Main Dish</label>
             <input type="radio" id="main-dish" name="meal-type" value="MAIN-DISH">
+              <label for="side">Main Dish</label>
           </label>
           <label>
-            <label for="side">Dessert</label>
-              <input type="radio" id="dessert" name="meal-type" value="DESSERT">
+            <input type="radio" id="dessert" name="meal-type" value="DESSERT">
+              <label for="side">Dessert</label>
           </label>
           <label>
-            <label for="side">Entire Meal</label>
-              <input type="radio" id="entire-meal" name="meal-type" value="ENTIRE-MEAL">
+            <input type="radio" id="entire-meal" name="meal-type" value="ENTIRE-MEAL">
+              <label for="side">Entire Meal</label>
           </label>
           <button class="cook-button">Let's Cook!</button>
         </section>
       </article>   
-      <article class="recipe-generator" id="receipt-result">
-        <section class="recipe-output">
-          <img class="cookpot-image" src="./assets/cookpot.svg" alt="There's nothing here.">
-        </section>
+      <article class="recipe-generator" id="recipe-result">
+        <img class="cookpot-image" src="./assets/cookpot.svg" alt="There's nothing here.">
       </article>
     </main>
   </body>

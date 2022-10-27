@@ -29,8 +29,15 @@ header {
 
 .add-recipe-button {
     border-radius: 5px;
-    border: none;
+    border-style: none;
+    padding: 7px;
 }
+
+.add-recipe-button:active {
+    background-color: rgb(207, 205, 205);
+}
+
+
 
 main {
     height: 70%;
@@ -72,7 +79,8 @@ main {
 }
 
 .recipe-selector {
-    margin:10%;
+    margin:0;
+    margin-left: 50px;
     display: flex;  
     justify-content: flex-end;
     flex-direction: column;
@@ -90,5 +98,16 @@ label {
     border: none;
 }
 
+#recipe-input {
+    display: flex;
+    justify-content: left;
+}
 
+#recipe-result {
+    display: flex;
+    justify-content: center;
+}
 
+.cook-button:active {
+    background-color: #0a8c86;
+}
