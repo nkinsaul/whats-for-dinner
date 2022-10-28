@@ -72,16 +72,33 @@ function displayEntireMeal() {
 }
 
 function displayDish () {  
-  foodImage.classList.add("hidden");
-  recipe_display.innerHTML = '';
-  if (selection === 'ENTIRE-MEAL') {
-    displayEntireMeal();
-  } else {
-  recipe_display.innerHTML += `
-    <h3>You should make:</h3>
-        <h2>${dishSelection}!</h2>`
+    console.log(selection);
+    if (selection === '') {
+        return;
+    } else if (selection === 'ENTIRE-MEAL') {
+        foodImage.classList.add("hidden");
+        recipe_display.innerHTML = '';
+        displayEntireMeal();
+    } else if (selection === 'SIDE' || 'MAIN-DISH' || 'DESSERT') {
+        foodImage.classList.add("hidden");
+        recipe_display.innerHTML = '';
+        recipe_display.innerHTML += `
+        <h3>You should make:</h3>
+          <h2>${dishSelection}!</h2>`
+    } 
   }
-}
+
+// function displayDish () {  
+//   foodImage.classList.add("hidden");
+//   recipe_display.innerHTML = '';
+//   if (selection === 'ENTIRE-MEAL') {
+//     displayEntireMeal();
+//   } else {
+//   recipe_display.innerHTML += `
+//     <h3>You should make:</h3>
+//         <h2>${dishSelection}!</h2>`
+//   }
+// }
 
 // need to write a conditional statement that checks to see if entire meal is selected, if it's not,
 // it will run as normal, but if entire meal IS selected, it will run the functionality I wrote
