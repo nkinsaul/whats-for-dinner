@@ -13,9 +13,9 @@
 // Will need an event listener on the 'let's cook' button so when it is clicked, it will update
 // to display the test from the array
 
-var sides = ['Green Beans', 'Mashed Potatoes', 'French Fries', 'Salad'];
-var main_dishes = ['Portabello Mushroom Burger', 'Green Curry', 'Spaghetti', 'Carbanara'];
-var desserts = ['Strawberry Rhubarb Pie', 'Pecan Pie', 'Chocolate Cake', 'Tiramisu'];
+var sides = ['Green Beans', 'Mashed Potatoes', 'French Fries', 'Salad', 'Butternut Squash', 'Mushroom Risotto'];
+var main_dishes = ['Portabello Mushroom Burger', 'Green Curry', 'Spaghetti', 'Carbanara', 'Chicken Parmesan', 'Rib-Eye Steak', 'Vegetable Stew'];
+var desserts = ['Strawberry Rhubarb Pie', 'Pecan Pie', 'Chocolate Cake', 'Tiramisu', 'Banana Bread', 'Kentucky Butter Cake'];
 var selection = '';
 var dishSelection = ''
 var random_side = ''
@@ -43,7 +43,7 @@ function updateSelection() {
         generateRandomDish(main_dishes)
     } else if (selection === 'DESSERT') {
         generateRandomDish(desserts)
-    } else if (selection === 'ENTIRE-MEAL')
+    } else if (selection === 'ENTIRE-MEAL') 
         generateEntireMeal();
 }
 
@@ -59,7 +59,6 @@ function generateEntireMeal () {
     random_side = (sides[randomNum1])
     random_main_dish = (main_dishes[randomNum2]);
     random_dessert = (desserts[randomNum3]);
-    // displayEntireMeal()
 }
 
 function displayEntireMeal() {
@@ -67,9 +66,9 @@ function displayEntireMeal() {
     recipe_display.innerHTML = '';
     recipe_display.innerHTML += `
     <h3>You should make:</h3>
-        <h2>${random_side}!</h2>
-        <h2>${random_main_dish}!</h2>
-        <h2>${random_dessert}!</h2>`
+        <h2>${random_main_dish} with a side of</h2>
+        <h2>${random_side} and</h2>
+        <h2>${random_dessert} for dessert!</h2>`
 }
 
 function displayDish () {  
