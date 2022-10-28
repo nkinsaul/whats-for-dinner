@@ -18,6 +18,9 @@ var main_dishes = ['Portabello Mushroom Burger', 'Green Curry', 'Spaghetti', 'Ca
 var desserts = ['Strawberry Rhubarb Pie', 'Pecan Pie', 'Chocolate Cake', 'Tiramisu'];
 var selection = '';
 var dishSelection = ''
+var random_side = ''
+var random_main_dish = ''
+var random_dessert = ''
 
 var cook_button = document.querySelector(".cook-button");
 var radio_buttons = document.querySelectorAll("input");
@@ -40,7 +43,8 @@ function updateSelection() {
         generateRandomDish(main_dishes)
     } else if (selection === 'DESSERT') {
         generateRandomDish(desserts)
-    }
+    } else if (selection === 'ENTIRE-MEAL')
+        generateEntireMeal();
 }
 
 function generateRandomDish (array) {
@@ -48,12 +52,41 @@ function generateRandomDish (array) {
     dishSelection = (array[randomNum]);
 }
 
-function displayDish () {  
-  foodImage.classList.add("hidden");
-  recipe_display.innerHTML +=`<h2 class="dish">You should make ${dishSelection}</h2>`
+function generateEntireMeal () {
+    var randomNum1 = (Math.floor(Math.random() * sides.length));
+    var randomNum2 = (Math.floor(Math.random() * main_dishes.length))
+    var randomNum3 = (Math.floor(Math.random() * desserts.length))
+    random_side = (sides[randomNum1])
+    random_main_dish = (main_dishes[randomNum2]);
+    random_dessert = (desserts[randomNum3]);
+    // displayEntireMeal()
 }
 
+function displayEntireMeal() {
+    foodImage.classList.add("hidden");
+    recipe_display.innerHTML = '';
+    recipe_display.innerHTML += `
+    <h3>You should make:</h3>
+        <h2>${random_side}!</h2>
+        <h2>${random_main_dish}!</h2>
+        <h2>${random_dessert}!</h2>`
+}
 
+function displayDish () {  
+  foodImage.classList.add("hidden");
+  recipe_display.innerHTML = '';
+  if (selection === 'ENTIRE-MEAL') {
+    displayEntireMeal();
+  } else {
+  recipe_display.innerHTML += `
+    <h3>You should make:</h3>
+        <h2>${dishSelection}!</h2>`
+  }
+}
+
+// need to write a conditional statement that checks to see if entire meal is selected, if it's not,
+// it will run as normal, but if entire meal IS selected, it will run the functionality I wrote
+// on the displayEntireMeal Function.
 
 // console.log(radio_buttons[1].value);
 
