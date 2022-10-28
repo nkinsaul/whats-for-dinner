@@ -111,3 +111,7 @@ label {
 .cook-button:active {
     background-color: #0a8c86;
 }
+
+.hidden {
+    display: none!important;
+  }
