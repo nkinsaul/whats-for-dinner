@@ -17,7 +17,7 @@ This application will suggest a random dish based on a selection from the user. 
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
-I worked on this project for roughly 12 hours.  I am about to begin my 4th week of Module 1 at turing.
+I worked on this project for roughly 12 hours.  I am about to begin my 4th week of Module 1 at Turing.
 
 ### Contributors:
 [//]: <> (Who worked on this application? Link to their GitHubs.)
