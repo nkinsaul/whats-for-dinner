@@ -13,7 +13,7 @@ This application will suggest a random dish based on a selection from the user. 
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-file:///Users/nataliekinsaul/turing/mod1/projects/whats-for-dinner/assets/entire_meal_ss.jpg
+![Image](/assets/entire_meal_ss.jpg)
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
